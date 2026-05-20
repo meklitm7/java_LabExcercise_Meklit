@@ -4,9 +4,15 @@
 
 ## 1. Overview
 
-The **Custom Poker Game** is a **2-player turn-based card game** implemented in Java. Players take turns swapping cards between their private hands and a shared pool of community cards. The objective is to build the strongest hand by maximizing the number of **pairs** (and related combinations such as Three of a Kind and Four of a Kind).
+The **Custom Poker Game** is a **2-player turn-based card game** implemented in Java. Players take turns swapping cards between their private hands and a shared pool of community cards. The objective is to build the strongest hand by maximizing the number of **pairs based on matching card ranks**.
 
-The player with the highest number of pairs at the end of the game wins.
+The game evaluates hands by counting cards with the same rank:
+
+- **Pair**: Two cards of the same rank (e.g., two Aces)
+- **Three of a Kind**: Counts as one pair
+- **Four of a Kind**: Counts as two pairs
+
+At the end of the game, the player with the highest pair count wins.
 
 ---
 
