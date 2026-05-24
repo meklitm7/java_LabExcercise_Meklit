@@ -12,7 +12,8 @@ public class DatabaseUtil {
 
     private static final String DB_USER = "root";
 
-    private static final String DB_PASSWORD = "meklit#mulugeta7";
+   // Read password from environment variable
+    private static final String PASSWORD = System.getenv("MYSQL_PASSWORD");
 
      
 
